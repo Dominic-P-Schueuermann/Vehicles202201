@@ -1,0 +1,60 @@
+public class BulletTrain{
+    private String model;
+    private int year;
+    private int personCapacity;
+    private double maxSpeed;
+
+    public BulletTrain(){
+        super();
+    }
+
+    public BulletTrain(String model, int year, int personCapacity, double maxSpeed ) {
+        super();
+        this.model = model;
+        this.year = year;
+        this.personCapacity = personCapacity;
+        this.maxSpeed = maxSpeed;
+    }
+
+    public double getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public int getPersonCapacity() {
+        return personCapacity;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public void setMaxSpeed(double maxSpeed) {
+        this.maxSpeed = maxSpeed;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setPersonCapacity(int personCapacity) {
+        this.personCapacity = personCapacity;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    @Overide
+    public String toString() {
+        return "BulletTrain (model of it is" + model + ", the year it was made was" +
+                " " + year + ", max capacity of the train is" + personCapacity + ", the max speed is " + maxSpeed + ")";
+    }
+
+    public String makeNoise() {
+        return"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA, HOOOOOOOOOOOOONNNNNNNNNNNNKKKK"
+    }
+    }

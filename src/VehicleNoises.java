@@ -10,7 +10,7 @@ import model.boat;
 import model.ElectricTruck;
 import model.Motorcycle;
 import model.Helicopter;
-
+import model.BulletTrain;
 
 public class VehicleNoises {
 	// add your vehicle class to the model package
@@ -56,6 +56,8 @@ public class VehicleNoises {
 		Helicopter chopper = new Helicopter();
 		System.out.println(chopper.makeNoise());
 
+		BulletTrain bt = new BulletTrain();
+		System.out.println(bt.makeNoise);
 
 
 

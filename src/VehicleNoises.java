@@ -10,10 +10,25 @@ import model.boat;
 import model.ElectricTruck;
 import model.Motorcycle;
 import model.Helicopter;
+import model.bulletTrain;
+import model.bike;
+import model.heelys;
+
 
 public class VehicleNoises {
 	// add your vehicle class to the model package
 	// only push this file and the vehicle class you created
+	public model bulletTrain;
+	public model bike;
+	public model heelys;
+
+	public String makeNoise(){
+
+		String noise= "Honk";
+
+		return noise;
+	}
+
 
 	public static void main(String[] args) {
 		Car honda = new Car();
@@ -51,6 +66,22 @@ public class VehicleNoises {
 		
 		Helicopter chopper = new Helicopter();
 		System.out.println(chopper.makeNoise());
+
+		bulletTrain bt = new bulletTrain();
+		System.out.println(bt.makeNoise());
+
+		bike bicicle = new bike();
+		System.out.println(bicicle.makeNoise());
+
+		heelys shoesWithWheels = new heelys();
+		System.out.println(shoesWithWheels.makeNoise());
+
+
+
+
+
+
+
 
 	}
 

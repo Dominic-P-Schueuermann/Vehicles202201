@@ -1,0 +1,18 @@
+Index: src/VehicleNoises.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import model.Car;\t\r\nimport model.Jeep;\r\nimport model.Moped;\r\nimport model.MuscleCar;\r\nimport model.Bus;\r\nimport model.Train;\r\nimport model.Truck;\r\nimport model.ElectricCar;\r\nimport model.boat;\r\nimport model.ElectricTruck;\r\nimport model.Motorcycle;\r\n\r\npublic class VehicleNoises {\r\n\t// add your vehicle class to the model package\r\n\t// only push this file and the vehicle class you created\r\n\r\n\tpublic static void main(String[] args) {\r\n\t\tCar honda = new Car();\r\n\t\tSystem.out.println(honda.makeNoise());\r\n\t\t\r\n\t\tJeep jeep = new Jeep();\r\n\t\tSystem.out.println(jeep.makeNoise());\r\n\t\t\r\n\t\tBus bus = new Bus();\r\n\t\tSystem.out.println(bus.makeNoise());\r\n\t\t\r\n\t\tTrain train = new Train();\r\n\t\tSystem.out.println(train.makeNoise());\r\n\r\n\t\tTruck truck = new Truck();\r\n\t\tSystem.out.println(truck.makeNoise());\r\n\t\t\r\n\t\tElectricCar EC = new ElectricCar();\r\n\t\tSystem.out.println(EC.makeNoise());\r\n\r\n\t\tboat nboat = new boat();\r\n\t\tSystem.out.println(nboat.makeNoise());\r\n\t\t\r\n\t\tMoped moped = new Moped();\r\n\t\tSystem.out.println(moped.makeNoise());\r\n\r\n\t\tElectricTruck ET= new ElectricTruck();\r\n\t\tSystem.out.println(ET.makeNoise());\r\n\r\n\t\tMotorcycle motorcycle = new Motorcycle();\r\n\t\tSystem.out.println(motorcycle.makeNoise());\r\n\r\n\t\tMuscleCar MC = new MuscleCar();\r\n\t\tSystem.out.println(MC.makeNoise());\r\n\r\n\t}\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/VehicleNoises.java b/src/VehicleNoises.java
+--- a/src/VehicleNoises.java	(revision bea605d8c2f0e98136c9336b64f30024cba83164)
++++ b/src/VehicleNoises.java	(date 1631168844484)
+@@ -48,6 +48,7 @@
+ 		MuscleCar MC = new MuscleCar();
+ 		System.out.println(MC.makeNoise());
+ 
++
+ 	}
+ 
+ }
